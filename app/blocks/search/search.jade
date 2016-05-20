@@ -1,0 +1,8 @@
+mixin search()
+	+b.search&attributes(attributes)
+		.container
+			.row
+				.col-sm-4.col-sm-offset-8
+					+e.FORM.form(action="#")
+						+e.INPUT.item(type="text" placeholder="Search")
+						+e.BUTTON.btn

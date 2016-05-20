@@ -1,0 +1,27 @@
+include ../title/title
+include ../list/list
+
+mixin aside()
+	+b.aside&attributes(attributes)
+		+e.item
+			+title Title aside
+			+e.map#map
+			+e.btn(href="#") Button
+
+		+e.item
+			+title Title aside
+			+list
+				+e.item
+					+e.title 11. December 2016, Termin 1
+					+e.text |n semer newgen Snzung na1 uer Lenkungsausschuss nas Mono aer Enrenamwlessen zme
+						+e.A.btn-more(href="#") more...
+				+e.item
+					+e.title 11. December 2016, Termin 1
+					+e.text |n semer newgen Snzung na1 uer Lenkungsausschuss nas Mono aer Enrenamwlessen
+						+e.A.btn-more(href="#") more...
+				+e.item
+					+e.title 11. December 2016, Termin 1
+					+e.text |n semer newgen Snzung na1 uer Lenkungsausschuss nas Mono aer Enrenamwlessen zme bescmossen
+						+e.A.btn-more(href="#") more...
+
+			+e.btn(href="#") Button

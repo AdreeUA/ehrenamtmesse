@@ -1,0 +1,18 @@
+include ../logo/logo
+
+mixin top-nav()
+	+b.top-nav&attributes(attributes)
+		.row
+			.col-sm-3
+				+logo
+
+			.col-sm-9.clearfix
+				+e.UL.menu
+					+e.LI.item
+						+e.link(href="#") Partner
+					+e.LI.item
+						+e.link(href="#") Impressum
+					+e.LI.item
+						+e.link(href="#") Datenschutz
+					+e.LI.item
+						+e.link(href="#") Kontakt

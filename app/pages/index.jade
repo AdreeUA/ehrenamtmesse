@@ -1,0 +1,20 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/search/search
+include /blocks/content/content
+include /blocks/aside/aside
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Ehrenamtmesse';
+
+block content
+	+header
+	+search
+	.container
+		.row
+			.col-sm-8
+				+content
+			.col-sm-4
+				+aside
+	+footer

@@ -1,0 +1,42 @@
+.top-nav
+	padding-bottom 10px
+
+	.logo
+		margin-left 15px
+
+		+below('xs')
+			position absolute
+			top -3px
+			left 5px
+			z-index 12
+
+	&__menu
+		float right
+		background-color #f90706
+
+		+below('xs')
+			float none
+			text-align center
+			margin-top 55px
+
+	&__item
+		display inline-block
+		vertical-align top
+
+		+below('xs')
+			width 23%
+			&:first-child
+				.top-nav__link
+					border-left none
+
+
+	&__link
+		display block
+		padding 8px 20px
+		text-decoration none
+		color #fff
+		font-size 12px
+		border-left 1px solid #fa5e5f
+
+		&:hover
+			text-decoration underline

@@ -1,0 +1,10 @@
+include ../top-nav/top-nav
+include ../main-nav/main-nav
+include ../slider-top/slider-top
+
+mixin header()
+	+b.header&attributes(attributes)
+		.container
+			+top-nav
+			+main-nav.header__nav#nav
+			+slider-top

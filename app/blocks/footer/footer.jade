@@ -1,0 +1,22 @@
+include ../clients/clients
+
+mixin footer()
+	+b.footer&attributes(attributes)
+		.container
+			+e.inner
+				+clients
+					+e.item
+						+e.IMG.image(src="assets/images/client-1.jpg" alt="Picture")
+					+e.item
+						+e.IMG.image(src="assets/images/client-2.jpg" alt="Picture")
+					+e.item
+						+e.IMG.image(src="assets/images/client-3.jpg" alt="Picture")
+					+e.item
+						+e.IMG.image(src="assets/images/client-4.jpg" alt="Picture")
+
+			+e.bottom
+				+e.P.copy (e) ehrenamtmesse.de
+				+e.menu
+					+e.A.link(href="#") Impressum
+					+e.A.link(href="#") Impressum
+					+e.A.link(href="#") Kontakt

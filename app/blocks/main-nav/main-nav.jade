@@ -1,0 +1,25 @@
+mixin main-nav()
+	+b.main-nav&attributes(attributes)
+		+e.burger-wrap
+			+e.BUTTON.burger#burger-button
+				+e.SPAN.burger-icon
+
+		+e.UL.list
+			+e.item
+				+e.link(href="#") Home
+			+e.item
+				+e.link(href="#") Aktuell
+			+e.item
+				+e.link(href="#") Grußwort
+			+e.item
+				+e.link(href="#") Termine
+			+e.item
+				+e.link(href="#") Förderer
+			+e.item
+				+e.link(href="#") Kuratorium
+			+e.item
+				+e.link(href="#") Rückblick
+			+e.item
+				+e.link(href="#") Links
+			+e.item
+				+e.link(href="#") Über uns
