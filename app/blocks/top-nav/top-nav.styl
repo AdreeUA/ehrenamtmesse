@@ -6,7 +6,7 @@
 
 		+below('xs')
 			position absolute
-			top -3px
+			top -9px
 			left 5px
 			z-index 12
 
@@ -29,6 +29,8 @@
 				.top-nav__link
 					border-left none
 
+		+below(422px)
+			width auto
 
 	&__link
 		display block
@@ -40,3 +42,7 @@
 
 		&:hover
 			text-decoration underline
+
+		+below(422px)
+			padding 8px
+			font-size 11px
